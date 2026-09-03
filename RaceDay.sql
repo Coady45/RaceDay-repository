@@ -1,4 +1,4 @@
--- RaceDay Database Script (Part 1)
+-- RaceDay Database Script
 USE master;
 GO
 IF DB_ID('RaceDay') IS NOT NULL DROP DATABASE RaceDay;
