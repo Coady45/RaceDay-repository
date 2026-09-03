@@ -1,4 +1,4 @@
--- RaceDay Database Script
+-- RaceDay Database Script (Part 1)
 USE master;
 GO
 IF DB_ID('RaceDay') IS NOT NULL DROP DATABASE RaceDay;
@@ -109,3 +109,4 @@ INSERT INTO Results (EnrolmentId,FinishTime,Position,Notes) VALUES
 
 PRINT 'RaceDay database created and seeded successfully.';
 GO
+
