@@ -1,0 +1,40 @@
+name: Validate Part 1 Docs
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required Part 1 files
+        run: |
+          echo "Checking /docs folder structure..."
+          
+          if [ ! -d "docs" ]; then
+            echo "ERROR: docs folder is missing"
+            exit 1
+          fi
+
+          if [ ! -f "docs/ERD.png" ] && [ ! -f "docs/ERD.pdf" ]; then
+            echo "ERROR: ERD file (png or pdf) is missing"
+            exit 1
+          fi
+
+          if [ ! -f "docs/API_Endpoint_Plan.md" ] && [ ! -f "docs/API_Endpoint_Plan.pdf" ]; then
+            echo "ERROR: API Endpoint Plan is missing"
+            exit 1
+          fi
+
+          if [ ! -f "docs/RaceDay.sql" ]; then
+            echo "ERROR: RaceDay.sql is missing"
+            exit 1
+          fi
+
+          echo "SUCCESS: All required Part 1 files are present!"
