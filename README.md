@@ -93,7 +93,7 @@ The unlisted YouTube video demonstrates:
 4. Running the SQL script in SQL Server Management Studio.
 5. The resulting database tables and sample data.
 
-**YouTube video:** [    ]
+**YouTube video:** [   https://youtu.be/J-bIkpJVFRc?si=OQuWKwOulMwtzUYm ]
 
 ## Project Structure
 
