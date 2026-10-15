@@ -5,6 +5,7 @@ using System.Reflection.Emit;
 
 namespace Raceday_app.Data
 {
+    // Database context for the RaceDay system
     public class RaceDayContext : DbContext
     {
         public RaceDayContext(
