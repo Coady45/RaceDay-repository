@@ -7,6 +7,7 @@ namespace Raceday_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    // Handles creating, updating and deleting events
     public class EventsController : ControllerBase
     {
         private readonly RaceDayContext _context;
