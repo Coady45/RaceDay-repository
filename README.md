@@ -202,7 +202,7 @@ The workflow runs when changes are pushed to GitHub.
 
 ## Part 2 Demonstration Video
 
-YouTube video: [  ]
+YouTube video: [ https://youtu.be/TFnX66RZhv4?si=OfBODIMDVRf5ZT_h ]
 
 The demonstration will show the running application,
 project structure, API endpoints, authentication,
