@@ -9,6 +9,8 @@ namespace Raceday_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+    // Handles user registration and login
     public class AuthController : ControllerBase
     {
         private readonly RaceDayContext _context;
