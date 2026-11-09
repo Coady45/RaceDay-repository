@@ -1,0 +1,41 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - RaceDay</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-nav">
+        <a class="brand" asp-controller="Home" asp-action="Index">
+            RACEDAY<span>.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="Index" asp-fragment="features">Features</a>
+            <a asp-controller="Home" asp-action="Index" asp-fragment="about">About</a>
+            <a asp-controller="Home" asp-action="Index" asp-fragment="contact">Contact</a>
+            <a class="nav-cta" href="/swagger/index.html">API Docs</a>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" asp-controller="Home" asp-action="Index">
+            RACEDAY<span>.</span>
+        </a>
+        <p>Running events, organised.</p>
+        <p>&copy; 2026 RaceDay Project</p>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js"></script>
+</body>
+</html>

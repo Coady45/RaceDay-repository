@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RaceDay | Running Events</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="/">RACEDAY<span>.</span></a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a class="nav-button" href="/swagger">API Docs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR RACE. YOUR JOURNEY.</p>
+
+                <h1>Every Race Has<br />A <span>Starting Line.</span></h1>
+
+                <p class="hero-description">
+                    Discover running events, explore race routes,
+                    enrol in categories and follow race results
+                    with RaceDay.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#features">
+                        Explore RaceDay
+                    </a>
+                    <a class="btn-secondary" href="/swagger">
+                        View API
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    Your running events, organised in one place.
+                </p>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT RACEDAY OFFERS</p>
+                <h2>Everything Starts Here.</h2>
+                <p>
+                    A central place to manage the important details
+                    of running events.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Running Events</h3>
+                    <p>
+                        Organise event information and make event
+                        details easier to access.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Race Categories</h3>
+                    <p>
+                        Keep event categories organised for
+                        participant enrolments.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Routes & Results</h3>
+                    <p>
+                        Store route information and race results
+                        associated with enrolments.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <p class="eyebrow">ABOUT THE PROJECT</p>
+            <h2>Built to Keep RaceDay Organised.</h2>
+            <p>
+                RaceDay is an application project built with
+                ASP.NET Core, C# and Entity Framework Core,
+                with SQL Server used for data storage.
+            </p>
+            <a class="btn-primary" href="/swagger">
+                Explore API Documentation
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="brand" href="/">RACEDAY<span>.</span></a>
+        <p>Running events, organised.</p>
+        <p>&copy; 2026 RaceDay Project</p>
+    </footer>
+</body>
+</html>

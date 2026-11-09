@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Participant Dashboard";
+}
+
+<h2>Participant Dashboard</h2>
+<p>Welcome! Here you can see your upcoming races and results.</p>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <a asp-action="Events" class="btn btn-outline-primary w-100 mb-2">Browse Events</a>
+    </div>
+    <div class="col-md-4">
+        <a asp-action="MyEnrolments" class="btn btn-outline-primary w-100 mb-2">My Enrolments</a>
+    </div>
+    <div class="col-md-4">
+        <a asp-action="MyResults" class="btn btn-outline-primary w-100 mb-2">My Results</a>
+    </div>
+</div>
